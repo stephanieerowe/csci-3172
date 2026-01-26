@@ -4,8 +4,8 @@ This activity extends a Magic 8-Ball example by adding Fortune Cookie sayings as
 
 * *Date Created*: 23 Jan 2026
 * *Last Modification Date*: 25 Jan 2026
-* *Lab Timberlea URL*: <https://web.cs.dal.ca/~yourusername/csci3172/activities/lecture5/>
-* *Lab GitLab URL*: <https://gitlab.com/yourusername/csci3172/-/tree/main/activities/lecture5>
+* *Lab Timberlea URL*: <https://web.cs.dal.ca/~srowe/csci3172/activities/lecture5/>
+* *Lab GitLab URL*: <https://gitlab.com/srowe/csci3172/-/tree/main/activities/lecture5>
 
 
 ## Authors

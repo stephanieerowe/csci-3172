@@ -22,16 +22,34 @@
 
 // In-Class Example - Activity
 
-// Create an array of possible answers
+// Create an array of Magic 8-Ball answers (Affirmative, Non-committal, and Negative)
 const answers = [
-  "It is certain.",
+  // Affirmative answers
+  "It is certain",
+  "It is decidedly so",
+  "Without a doubt",
+  "Yes definitely",
   "You may rely on it",
+  "As I see it yes",
+  "Most likely",
+  "Outlook good",
+  "Yes",
+  "Signs point to yes",
+  // Non-committal answers
+  "Reply hazy try again",
   "Ask again later",
-  "Reply hazy, try again",
   "Better not tell you now",
-  "Outlook not so good.",
+  "Cannot predict now",
+  "Concentrate and ask again",
+  // Negative answers
+  "Don't count on it",
+  "My reply is no",
+  "My sources say no",
+  "Outlook not so good",
+  "Very doubtful",
 ];
-// Create an array of fortune cookie sayings
+
+// array of fortune cookie sayings
 const fortuneCookies = [
   "A beautiful, smart, and loving person will be coming into your life.",
   "A faithful friend is a strong defense.",
@@ -43,7 +61,10 @@ const fortuneCookies = [
   "Do not fear what you don't know.",
   "Hard work pays off in the future, laziness pays off now.",
   "Now is the time to try something new.",
+  "Stay healthy. Walk a mile."
 ];
+
+
 // Create a function to fetch the question the user has asked
 // Our function should also check from an empty value
 // Helper that randomly selects between the Magic 8-Ball answers and fortune cookies
@@ -65,14 +86,23 @@ function askQuestion() {
     return;
   }
 
-  // Get a randomly selected answer from one of the lists
+  // shake animation on the magic 8-ball image
+  const magicBallImage = document.getElementById("magicBallImage");
+  magicBallImage.classList.add("shake");
+  
+  // remove the shake class after the animation completes
+  setTimeout(() => {
+    magicBallImage.classList.remove("shake");
+  }, 1500);
+
+  // get a randomly selected answer from one of the lists
   const result = getAnswer();
 
-  // Display the question and answer back to the user
-  const output = `You asked: ${userQuestion}; ` + `${result.source} says: ${result.text}`;
+  // display the question and answer back to the user
+  const output = `You asked: ${userQuestion};   ` + `${result.source} says: ${result.text}`;
   document.getElementById("answer").textContent = output;
 
-  // Also log the full interaction and return it
+  // also log the full interaction and return it
   console.log(`Question: ${userQuestion}`);
   console.log(`Answer: ${result.text} (from ${result.source})`);
   return result;

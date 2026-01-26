@@ -1,8 +1,8 @@
 /* General Page Styles */
 body {
-	background: #0984e3;	
+	background: #203727;	
 	font: 16px/1.5 'Helvetica Neue', Helvetica, Arial, sans-serif;
-	text-transform: uppercase;
+	/* text-transform: uppercase; */
 	margin-top: 5em;
 	display: flex;
 	justify-content: center;
@@ -12,42 +12,67 @@ section {
 	width: 50%;
 	background: #dfe6e9;
 	padding: 2em;
+	border-radius: 20px;
+	font-family: Luminari;
 }
 h1 {
-	font-size: 2em;
+	font-size: 2.5em;
 	text-align: center;
+}
+
+/* Magic 8-Ball Image Styles */
+#magicBallImage {
+	display: block;
+	margin: 1em auto;
+	width: 150px;
+	height: 150px;
+	border-radius: 50%;
+	box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+#magicBallImage.shake {
+	animation: shake 1s ease-in-out;
+}
+
+@keyframes shake {
+	0%, 100% { transform: translateX(0); }
+	10%, 30%, 50%, 70%, 90% { transform: translateX(-10px); }
+	20%, 40%, 60%, 80% { transform: translateX(10px); }
 }
 
 /* Magic 8-Ball Form Styles */
 div.magicBall{
 	width: 60%;
 	margin: 1em auto;
-	padding: 3em;
+	padding: 2.5em;
 }
 input[type="text"] {
-	width: 70%;
+	width: 60%;
 	padding: 1.2em;
 	font-size: 1.2em;
 	border: solid 1px #636e72;
-	border-radius: 2%;
+	border-radius: 10px;
 	background: #fff;
 	color: #2d3436;
 }
 button {
-	border-radius: 1%;
-	border: solid thin #00b894;
-	background: #55efc4;
+	border-radius: 10px;
+	border: solid thin #89498b;
+	background: #deade6;
 	font-size: 1.2em;
 	padding: 1.2em;
 	font-weight: bold;
 	color: #2d3436;
 	width: 20%;
+	vertical-align: top;
 }
 button:hover {
-	background: #00b894;
+	background: #c196c7;
 }
 p#answer {
 	font-weight: bold;
 	text-align: center;
 	font-size: 1.5em;
+	font-family: arial, sans-serif;
 }
+

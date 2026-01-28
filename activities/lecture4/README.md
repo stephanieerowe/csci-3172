@@ -4,7 +4,7 @@ An introductory JavaScript activity where I created variables to store personal 
 
 * *Date Created*: 18 Jan 2026
 * *Last Modification Date*: 20 Jan 2026
-* *Lab Timberlea URL*: <https://web.cs.dal.ca/~stephanierowe/csci3172/activities/lecture4/>
+* *Lab Timberlea URL*: <https://web.cs.dal.ca/~srowe/csci3172/activities/lecture4/>
 * *Lab Gitlab URL*: https://git.cs.dal.ca/srowe/csci-3172.git 
 
 

@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IMS Lab 3</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+
+  <body>
+    <header class="container">
+      <h1>Inventory Management System</h1>
+      <p class="muted">Fictional shop inventory</p>
+    </header>
+
+    <main class="container grid">
+      <section class="card">
+        <h2>Add item</h2>
+
+        <!-- primary form for adding or updating items -->
+        <form id="add-form" class="form">
+          <label>
+            Name
+            <input id="name" name="name" type="text" required />
+          </label>
+
+          <label>
+            Type
+            <input id="type" name="type" type="text" required />
+          </label>
+
+          <label>
+            Price
+            <input id="price" name="price" type="number" min="0" step="0.01" required />
+          </label>
+
+          <label>
+            Quantity
+            <input id="quantity" name="quantity" type="number" min="0" step="1" required />
+          </label>
+
+          <label>
+            Description
+            <textarea id="description" name="description" rows="3" required></textarea>
+          </label>
+
+          <button type="submit">Add / Update</button>
+          <p id="form-error" class="error" aria-live="polite"></p>
+        </form>
+      </section>
+
+      <section class="card">
+        <h2>Search</h2>
+        <div class="row">
+          <input id="search" type="text" placeholder="Search by name or type..." />
+          <button id="search-btn" type="button">Search</button>
+          <button id="clear-search-btn" type="button" class="secondary">Clear</button>
+        </div>
+
+        <h2 class="mt">Discount (bonus)</h2>
+        <div class="row">
+          <input id="discount" type="number" min="0" max="100" step="1" placeholder="%" />
+          <button id="discount-btn" type="button">Apply</button>
+        </div>
+
+        <h2 class="mt">Totals</h2>
+        <p><strong>Total inventory value:</strong> <span id="total-value">$0.00</span></p>
+      </section>
+
+      <section class="card full">
+        <div class="row space-between">
+          <h2>Inventory</h2>
+          <button id="list-btn" type="button" class="secondary">List all</button>
+        </div>
+
+        <!-- inventory list renders here -->
+        <div id="inventory" class="inventory"></div>
+      </section>
+
+      <section class="card full">
+        <h2>Category view (bonus)</h2>
+        <div id="categories" class="categories"></div>
+      </section>
+    </main>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,35 @@
+/* For information on how to implement Bootstrap and how to apply your own custom CSS, visit: https://getbootstrap.com/docs/5.3/getting-started/introduction/  */
+/* Custom CSS */
+body {
+	background-color: #f5f6fa;
+}
+
+body .container {
+	background-color: #fff;
+	margin-top: 5em;
+	border: solid #dcdde1 thin;
+	padding: 2.5em;
+}
+#registrationForm .form-check-inline {
+	padding-left: 1em;
+}
+#registrationForm .form-check-inline label {
+	padding-right: 0.5em;
+}
+#registrationForm .form-check-inline input[type="checkbox"] {
+	margin-right: 2em;
+}
+
+input.active,
+input.form-control.active,
+#registrationForm input.active{
+	border-color: #633777 !important;
+	background-color: #ecd7f5 !important;
+	box-shadow: 0 0 0 0.2rem rgba(132, 56, 159, 0.35) !important;
+}
+.success {
+    border: 1px solid #c3e6cc;
+	background-color: #d4edda;
+    padding: 10px;
+    margin-top: 10px;
+}

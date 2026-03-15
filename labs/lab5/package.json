@@ -1,0 +1,19 @@
+{
+  "name": "recipe-recommender",
+  "version": "1.0.0",
+  "description": "RecipeFind — Personalized Recipe Recommender App (CSCI 3172 Lab 5)",
+  "scripts": {
+    "test":       "jest --coverage",
+    "test:watch": "jest --watch"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "testMatch": ["**/tests/**/*.test.js"]
+  },
+  "devDependencies": {
+    "jest": "^29.7.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}

@@ -1,0 +1,27 @@
+# Netlify build configuration for RecipeFind (CSCI 3172 Lab 5)
+# If deploying from the repo root, set Base directory to "labs/lab5" in the
+# Netlify UI.  If deploying from the labs/lab5 folder directly, leave it as-is.
+
+[build]
+  # Path to serverless functions directory (relative to the base directory)
+  functions = "netlify/functions"
+  # Publish directory — the whole lab5 folder is the static site
+  publish = "."
+
+[build.environment]
+  # Use Node 18 so serverless functions have native fetch
+  NODE_VERSION = "18"
+
+# ── Security headers ──────────────────────────────────────────────────────────
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options         = "DENY"
+    X-Content-Type-Options  = "nosniff"
+    Referrer-Policy         = "strict-origin-when-cross-origin"
+
+# ── Convenience redirect so /api/recipes works as an alias ───────────────────
+[[redirects]]
+  from   = "/api/recipes"
+  to     = "/.netlify/functions/recipes"
+  status = 200

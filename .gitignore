@@ -1,2 +1,5 @@
 .DS_Store
 *.pdf
+
+# Local Netlify folder
+.netlify

@@ -1,0 +1,20 @@
+[
+  {
+    "name": "Campus Events Dashboard",
+    "author": "Stephanie Rowe",
+    "languages": ["JavaScript", "React", "CSS"],
+    "description": "A dashboard that aggregates and filters student events with responsive cards."
+  },
+  {
+    "name": "Recipe Finder",
+    "author": "Stephanie Rowe",
+    "languages": ["Node.js", "Express", "HTML"],
+    "description": "A full-stack search app using API endpoints and custom filtering logic."
+  },
+  {
+    "name": "Study Planner",
+    "author": "Stephanie Rowe",
+    "languages": ["React", "LocalStorage", "Bootstrap"],
+    "description": "A study planning interface with persistent tasks, priorities, and due dates."
+  }
+]

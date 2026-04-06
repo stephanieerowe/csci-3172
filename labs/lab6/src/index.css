@@ -1,0 +1,123 @@
+:root {
+  --bg: #f4f4ef;
+  --surface: #ffffff;
+  --surface-2: #eef4f6;
+  --text: #132226;
+  --muted: #395157;
+  --accent: #005f73;
+  --accent-contrast: #ffffff;
+  --border: #cdd9dd;
+  --danger: #9a1e18;
+  --success: #0f6a46;
+}
+
+:root[data-theme='dark'] {
+  --bg: #1c2326;
+  --surface: #273137;
+  --surface-2: #324249;
+  --text: #f6fbff;
+  --muted: #d2e2ea;
+  --accent: #9fd4c2;
+  --accent-contrast: #0f2e26;
+  --border: #526069;
+  --danger: #ff8f87;
+  --success: #9de0bd;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+  background:
+    radial-gradient(circle at 10% 10%, rgba(0, 95, 115, 0.08), transparent 30%),
+    radial-gradient(circle at 90% 15%, rgba(238, 155, 0, 0.08), transparent 25%),
+    var(--bg);
+  color: var(--text);
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', sans-serif;
+  line-height: 1.5;
+}
+
+.site-header,
+.site-footer,
+.card {
+  background-color: var(--surface);
+  border-color: var(--border) !important;
+}
+
+.navbar-brand,
+.nav-link,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+strong,
+label,
+p,
+span,
+li {
+  color: var(--text);
+}
+
+p,
+small,
+.text-secondary {
+  color: var(--muted) !important;
+}
+
+.btn-primary {
+  background-color: var(--accent);
+  border-color: var(--accent);
+  color: var(--accent-contrast);
+}
+
+.btn-primary:hover,
+.btn-primary:focus-visible {
+  background-color: #0a7288;
+  border-color: #0a7288;
+  color: var(--accent-contrast);
+}
+
+.form-control,
+.form-select,
+.form-check-input {
+  background: var(--surface);
+  border-color: var(--border);
+  color: var(--text);
+}
+
+.form-control:focus,
+.form-select:focus,
+.form-check-input:focus {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 0.2rem rgba(0, 95, 115, 0.2);
+}
+
+.text-danger {
+  color: var(--danger) !important;
+}
+
+.text-success {
+  color: var(--success) !important;
+}
+
+.weather-card {
+  background: linear-gradient(160deg, var(--surface), var(--surface-2));
+}
+
+@media (max-width: 991px) {
+  .navbar-collapse {
+    margin-top: 1rem;
+    padding-top: 1rem;
+    border-top: 1px solid var(--border);
+  }
+}

@@ -2,7 +2,8 @@
 
 Date Created: 2026-04-04  
 Last Modification Date: 2026-04-06  
-Lab URL: <ADD NETLIFY OR AWS AMPLIFY URL HERE>
+Netlify URL: https://lab6-stephanie-rowe.netlify.app/
+gitlab URL: https://git.cs.dal.ca/srowe/csci-3172/-/tree/main/labs/lab6?ref_type=heads
 
 ## Author
 

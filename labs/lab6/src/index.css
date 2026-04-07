@@ -74,6 +74,16 @@ li {
   color: var(--text);
 }
 
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+.card-title {
+  color: var(--text) !important;
+}
+
 p,
 small,
 .text-secondary {
@@ -121,6 +131,16 @@ h3,
 .nav-link.active {
   background: color-mix(in srgb, var(--accent) 17%, var(--accent-soft) 83%);
   color: color-mix(in srgb, var(--text) 88%, black 12%) !important;
+}
+
+:root[data-theme='dark'] .site-header .nav-link.active {
+  background: color-mix(in srgb, var(--accent-soft) 72%, var(--surface) 28%);
+  color: color-mix(in srgb, var(--text) 92%, white 8%) !important;
+}
+
+:root[data-theme='dark'] .site-header .nav-link:hover,
+:root[data-theme='dark'] .site-header .nav-link:focus-visible {
+  color: color-mix(in srgb, var(--text) 90%, white 10%) !important;
 }
 
 .btn-primary {

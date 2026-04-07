@@ -1,6 +1,6 @@
 # Lab 6 - Personal Portfolio SPA
 
-Date Created: 2026-04-06  
+Date Created: 2026-04-04  
 Last Modification Date: 2026-04-06  
 Lab URL: <ADD NETLIFY OR AWS AMPLIFY URL HERE>
 
@@ -95,8 +95,8 @@ Create a .env file from .env.example and set values:
 ## AI Tools Used
 
 - GitHub Copilot (GPT-5.3-Codex)
-- Used to scaffold project structure, implement routing/hooks/components, and generate test/config boilerplate.
-- All generated code was reviewed and adapted for assignment requirements.
+- Used for a small portion of the project: styling refinements and guidance on proper Netlify project/function structure.
+- Core application logic, page implementation, and final integration were completed and reviewed manually.
 
 ## Acknowledgments
 
